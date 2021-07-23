@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="room"></div>
+
+        <span id="name"></span>
+        <input type="text" id="message" size="30" />
+        <input type="button" id="send_message" value="send" />
+
+        <script src="chat.js"></script>
+        <script>
+            $(function(){
+                chat.init();
+                chat.bind();
+            })
+        </script>
+    </body>
+</html>
